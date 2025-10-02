@@ -64,7 +64,7 @@
       const ma5 = parseFloat(document.getElementById('ma5').value);
       const ma10 = parseFloat(document.getElementById('ma10').value);
 
-      const response = await fetch("https://stock-prediction-app-4mkn.onrender.com/predict", {
+      const response = await fetch("https://stock-prediction-app-4mkn.onrender.com", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ AdjClose: adjclose, MA5: ma5, MA10: ma10 })
